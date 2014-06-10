@@ -1488,6 +1488,9 @@ namespace LibGit2Sharp.Core
 
         [DllImport(libgit2)]
         internal static extern int git_blob_is_binary(GitObjectSafeHandle blob);
+
+        [DllImport(libgit2)]
+        internal static extern int git_cherry_pick(RepositorySafeHandle repo, GitObjectSafeHandle commit, GitCherryPickOptions options);
     }
 }
 // ReSharper restore InconsistentNaming
