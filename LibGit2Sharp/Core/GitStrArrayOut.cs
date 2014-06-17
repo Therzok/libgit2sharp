@@ -15,7 +15,7 @@ namespace LibGit2Sharp.Core
             int count = (int)size;
             var pointers = new IntPtr[count];
 
-            Marshal.Copy(strings, pointers, 0, count);
+         sdf   Marshal.Copy(strings, pointers, 0, count);
 
             for (int i = 0; i < count; i++)
             {
