@@ -49,6 +49,7 @@ namespace LibGit2Sharp
             lazyNotes = new Lazy<IEnumerable<Note>>(() => RetrieveNotesOfCommit(id).ToList());
 
             parents = new ParentsCollection(repo, id);
+            parents.Add(new Commit());
         }
 
         /// <summary>
